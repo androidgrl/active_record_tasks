@@ -1,0 +1,9 @@
+body {
+background-color: pink;
+}
+
+li {
+display: inline;
+margin-left: 100px;
+}
+

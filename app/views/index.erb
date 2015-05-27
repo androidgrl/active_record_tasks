@@ -1,8 +1,17 @@
+<div id="statuses">
+<ul>
+  <% statuses.each do |status| %>
+    <li><a href="/statuses/<%=status.id %>"><%= status.name %></a></li>
+  <% end %>
+</ul>
+</div>
 <h1>All Tasks</h1>
-
 <div id="tasks">
-  <% @tasks.each do |task| %>
-    <h3><%= task.title %></h3>
-    <p><%= task.description %></p>
+  <% users.each do |user| %>
+    <h1><%= user.name %></h1>
+    <% user.tasks.each do |task| %>
+      <h3><%= task.title %></h3>
+      <h3><%= task.description %></h3>
+    <% end %>
   <% end %>
 </div>
